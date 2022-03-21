@@ -1,0 +1,166 @@
+{% extends "base.html" %} 
+{% block title %} Home Page {% endblock %}
+{% block content %}
+
+<div class="container" style="margin-top: 6rem; min-height: 90vh; color: black;">
+
+    <h3 class="my-3"> Upcoming Event </h3>
+
+    <hr>
+
+  {% for i in db_list %}
+
+  {% if i.Event =='iSaham Gear One'%}
+  <div class="row">
+    <div class="col-8">
+
+      <p> {{i.Event}}</p>
+      <p> {{i.Event_date}}</p>
+      <p> {{i.Description}}</p>
+
+    </div>
+    
+    <div class="col-lg-4">      
+      <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Gear_One.jpg" class="img-thumbnail">
+    </div>
+    <hr>
+  </div>
+
+  {% elif i.Event =='iSaham Playback'%}
+  <div class="row">
+
+    <div class="col-8">
+
+      <p> {{i.Event}}</p>
+      <p> {{i.Event_date}}</p>
+      <p> {{i.Description}}</p>
+
+    </div>
+    
+    <div class="col-lg-4">
+      <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Playback.jpg" class="img-thumbnail">      
+    </div>
+    <hr>
+  </div>  
+
+  {% elif i.Event =='iSaham Accelerator'%}
+  <div class="row">
+
+    <div class="col-8">
+
+      <p> {{i.Event}}</p>
+      <p> {{i.Event_date}}</p>
+      <p> {{i.Description}}</p>
+
+    </div>
+    
+    <div class="col-lg-4">
+      <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Accelerator.jpg" class="img-thumbnail">      
+    </div>
+    <hr>
+  </div> 
+
+  {% elif i.Event =='iSaham Max Live'%}
+  <div class="row">
+
+    <div class="col-8">
+
+      <p> {{i.Event}}</p>
+      <p> {{i.Event_date}}</p>
+      <p> {{i.Description}}</p>
+
+    </div>
+    
+    <div class="col-lg-4">
+      <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Max_2022.jpg" class="img-thumbnail">      
+    </div>
+    <hr>
+  </div> 
+
+
+</div>
+{% endif %}
+{% endfor %}
+
+<div class="container" style="margin-top: 6rem; min-height: 90vh; color: black;">
+
+  <h3 class="my-3"> Previous Event </h3>
+
+  <hr>
+
+{% for i in db_list1 %}
+
+{% if i.Event =='iSaham Gear One'%}
+<div class="row">
+  <div class="col-8">
+
+    <p> {{i.Event}}</p>
+    <p> {{i.Event_date}}</p>
+    <p> {{i.Description}}</p>
+
+  </div>
+  
+  <div class="col-lg-4">      
+    <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Gear_One.jpg" class="img-thumbnail">
+  </div>
+  <hr>
+</div>
+
+{% elif i.Event =='iSaham Playback'%}
+<div class="row">
+
+  <div class="col-8">
+
+    <p> {{i.Event}}</p>
+    <p> {{i.Event_date}}</p>
+    <p> {{i.Description}}</p>
+
+  </div>
+  
+  <div class="col-lg-4">
+    <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Playback.jpg" class="img-thumbnail">      
+  </div>
+  <hr>
+</div>  
+
+{% elif i.Event =='iSaham Accelerator'%}
+<div class="row">
+
+  <div class="col-8">
+
+    <p> {{i.Event}}</p>
+    <p> {{i.Event_date}}</p>
+    <p> {{i.Description}}</p>
+
+  </div>
+  
+  <div class="col-lg-4">
+    <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Accelerator.jpg" class="img-thumbnail">      
+  </div>
+  <hr>
+</div> 
+
+{% elif i.Event =='iSaham Max Live'%}
+<div class="row">
+
+  <div class="col-8">
+
+    <p> {{i.Event}}</p>
+    <p> {{i.Event_date}}</p>
+    <p> {{i.Description}}</p>
+
+  </div>
+  
+  <div class="col-lg-4">
+    <img src="https://isaham.sgp1.digitaloceanspaces.com/pages/pricing/iSaham_Max_2022.jpg" class="img-thumbnail">      
+  </div>
+  <hr>
+</div> 
+
+</div>
+
+
+{% endif %}
+{% endfor %}
+
+{% endblock %}
