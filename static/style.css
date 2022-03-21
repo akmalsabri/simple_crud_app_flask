@@ -1,0 +1,116 @@
+body{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family: 'Raleway',sans-serif;
+	color: #fff;
+}
+
+/* Banner, First Image */
+.banner{
+	height: 100vh;
+	width: 100%;
+	background:url('../assets/img/overlay.png'),url('../assets/img/banner3.jpg');
+	background-position: top;
+	background-size:cover;
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;
+}
+.banner .info{
+	margin-top:20%;
+	transform: translateY(-15%);
+}
+.banner .info h1{
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.banner .info p{
+	font-size: 2em;
+	font-weight: 500;
+	color: #aaa;
+	letter-spacing: 2px;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+	font-size: 60px;
+	color: #111;
+	text-align: center;
+	font-weight: 400;
+  }
+  .section-header .section-description {
+	text-align: center;
+	padding-bottom: 40px;
+	color: #777;
+	font-style: italic;
+  }
+  .section-header .section-divider {
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #28A745;
+	margin: 0 auto;
+	margin-bottom: 20px;
+  }
+
+/* Sections Header
+--------------------------------*/
+.section-header2 .section-title {
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	font-weight: 400;
+  }
+  .section-header2 .section-description {
+	text-align: center;
+	padding-bottom: 40px;
+	color: #777;
+	font-style: italic;
+  }
+  .section-header2 .section-divider {
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #28A745;
+	margin: 0 auto;
+	margin-bottom: 20px;
+  }
+
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.call-to-action {
+	position: relative;
+	background-color: #343a40;
+	background:#404040	;
+	background-size: cover;
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+
+/* background: url("../assets/img/banner3.jpg") no-repeat center center ; */
+
+/* .text-contain{
+	font-size: 24px;
+	font-weight: 400;	
+} */
+
+.contact-text{
+
+	font-size: 20px;
+	font-weight: 400;
+}
